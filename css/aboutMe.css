@@ -1,0 +1,156 @@
+body{
+    background-image:url('../img/hk.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    margin:0 auto;
+    font-family: 'roboto', 'Times New Roman', Times, serif;
+    font-size: 17px;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(66 103 178);
+    font-family: 'roboto', 'Times New Roman', Times, serif;
+}
+#Banner{
+    height:auto;
+    width: 100%;
+    object-fit: cover;
+    position:relative;
+    top:-100px;
+}
+.aboutMe, .myJourney{
+    display:grid;
+    place-items: center;
+    column-gap:10px;
+    grid-template-columns: auto auto;
+    width: 1000px;
+    margin: 0 auto;
+    background-color: rgb(251, 251, 246);
+    opacity:0.95;
+}
+.description, .slider-img, .buttons{
+    display:flex;
+}
+.description{
+    color: black;
+    justify-content:center;
+    align-items: center;
+    padding:10px;
+}
+.selfPortrait{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border: 2px solid white;
+}
+.dates{
+    color: grey;
+}
+.slider-img{
+    margin: 25px auto; /*better alternative to margin-left:auto; , margin-right:auto;*/
+    height: 490px; /*auto too large*/
+    width: 60%; /*100% too large*/
+    object-fit: contain;
+    box-sizing:border-box;
+    align-items: center;
+} 
+.buttons{
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin-bottom: 100px;
+}
+.prev, .next{
+    border:none;
+    outline:none;
+    background:rgb(227, 227, 227);
+    padding: 10px 30px; 
+    font-size: 18px;
+    color:black;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+.prev:hover, .next:hover{
+    background: rgb(66 103 178);
+    color: white;
+}
+.footer{
+    position:fixed; /*fixed over absolute because i want my contact methods to be visible at all times*/
+    left:0;
+    bottom:0;
+    width: 100%;
+    text-align: start;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+}
+.fb, .ig, .gmail, .git, .linkedn{
+    color:black;
+    background:whitesmoke;
+    cursor: pointer;
+    text-decoration: none;
+    transform: translate(-50%, -50%);/*transform moves elements and translate shift the up or down, in my case icons 50% above footer*/
+    width: 60px;
+    height:60px;
+    border-radius: 50%; /*make the buttons round/curved*/
+    font-size: 30px;
+    transition: 0.5s;
+    align-items:center;
+    justify-content: center;
+    display:flex;
+}
+/* i like the effects so i followed a tutorial, googled the rgb values of logos to implement*/
+a::before{
+    content:'';
+    position:absolute;
+    top:0;
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+    transition:.5s;
+}
+a:hover::before{
+    transform: scale(1.1)
+}
+.fb:hover::before{
+    box-shadow: 0 0 15px rgb(66 103 178);
+}
+.fb:hover{
+    color:rgb(66 103 178);
+    box-shadow: 0 0 5px rgb(66 103 178);
+    text-shadow: 0 0 5px rgb(66 103 178);
+}
+.ig:hover::before{
+    box-shadow: 0 0 15px rgb(205, 72, 107);
+}
+.ig:hover{
+    color:rgb(205, 72, 107);
+    box-shadow: 0 0 5px rgb(205, 72, 107);
+    text-shadow: 0 0 5px rgb(205, 72, 107);
+}
+.git:hover::before{
+    box-shadow: 0 0 15px rgb(0, 3, 51);
+}
+.git:hover{
+    color:rgb(0, 3, 51);
+    box-shadow: 0 0 5px rgb(0, 3, 51);
+    text-shadow: 0 0 5px rgb(0, 3, 51);
+}
+.linkedn:hover::before{
+    box-shadow: 0 0 15px rgb(10, 102, 194);
+}
+.linkedn:hover{
+    color:rgb(10, 102, 194);
+    box-shadow: 0 0 5px rgb(10, 102, 194);
+    text-shadow: 0 0 5px rgb(10, 102, 194);
+}
+.gmail:hover::before{
+    box-shadow: 0 0 15px rgb(242,166,12);
+}
+.gmail:hover{
+    color:rgb(242,166,12);
+    box-shadow: 0 0 5px rgb(242,166,12);
+    text-shadow: 0 0 5px rgb(242,166,12);
+}

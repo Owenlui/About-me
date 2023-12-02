@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Owen Lui</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="css\aboutMe.css">
+    <!--Roboto Font from google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+    <!--Content scaling on different devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+</head>
+<body>
+<!--Banner-->
+<div>
+    <img id="Banner" src="img/Banner.jpg">
+</div>
+<!--Get to know me section-->
+    <h1>Get To Know Me</h1>
+    <div class="aboutMe"> 
+        <div class="description">I am an aspiring full-stack developer from Hong Kong, currently embarking on my journey with Xccelerate. Previously, i was a program director at a local NGO. I decided to transition to follow my passion in coding.<br><br>In my spare time, you'll find me dreaming of soccer, hiking on the mountains of Hong Kong, playing golf, tennis and more recently paddel ball.</div>
+        <div><img class="selfPortrait" src="img/selfPortrait.jpg"> 
+    </div>
+</div>
+<br>
+<br>
+<!--CV Section-->
+<div class="myJourney">
+    <h1> Experiences </h1>
+    <dl>
+        <dd class="dates"> 2018 - 2023</dd>
+        <dd><b>China-United States Exchange Foundation</b>, Hong Kong</dd>
+        <dd><i>Program Director</i></dd>
+        <br>
+        <dd class="dates"> 2016 - 2018</dd>
+        <dd><b>Sentinel International Co.,Ltd</b>, Hong Kong</dd>
+        <dd><i>Assistant Project Manager</i></dd>
+        <br>
+        <dd class="dates"> 2014 - 2015</dd>
+        <dd><b>Union Paper Box and Press Ltd</b>, Hong Kong</dd>
+        <dd><i>Assistant Marketing Executive</i></dd>
+    </dl>
+</div>
+<br>
+<!--Hobbies/placeholder for future projects-->
+<div>
+    <h1> My Off Hours</h1>
+<!--Image slider--> 
+    <img src="img/Golf.jpg" alt="Hobbies" class="slider-img" id="placeholder"/>
+    <div class="buttons">
+         <button class="prev" id="prev"><span>&#x2190;</span></button>
+        <button class="next" id="next"><span>&#x2192;</span></button>
+    </div>
+</div>
+<div class="footer">
+    <a class="gmail" href="mailto:owenlui.hk@gmail.com" target="_top">
+        <ion-icon name="mail-outline"></ion-icon>
+    </a>
+    <a class="linkedn" href="https://www.linkedin.com/in/owen-lui-506a32168/" target="_blank">
+        <ion-icon name="logo-linkedin"></ion-icon>
+    </a>
+    <a class="git" href="https://github.com/Owenlui" target="_blank">
+        <ion-icon name="logo-github"></ion-icon>
+    </a>
+    <a class="fb" href="https://www.facebook.com/ohylui" target="_blank">
+        <ion-icon name="logo-facebook"></ion-icon>
+    </a>
+    <a class="ig" href="https://www.instagram.com/owenlui.hk/" target="_blank">
+        <ion-icon name="logo-instagram"></ion-icon>
+    </a>
+</div>
+<!--External JS for Slider-->
+<script src="/js/aboutMe.js"></script>
+<!--external library for the Social Media Icons-->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
