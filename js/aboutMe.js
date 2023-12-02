@@ -13,7 +13,7 @@ let currentImage = 0; //let because value will change
 //next button
 const nextButton= document.getElementById('next')
 nextButton.addEventListener('click',()=>{
-    const imgTag = document.getElementById(placeholder); //problem imgTag null
+    const imgTag = document.getElementById(placeholder);
     currentImage++; //after click, value increases by 1, which means index 1/image 2 will be shown. 
     if(currentImage >= lastImage) {
         currentImage = 3; //if value is 3 or exceeds 3, it'll set back to 3, containing the user to the last image 
